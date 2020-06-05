@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial;
 }
 /* main */
 main {
@@ -19,9 +20,6 @@ main {
 #principale {
   width: calc(100% - 230px);
   float: right;
-  /* debug */
-  background-color: red;
-  height: 200px;
 }
 /* barra trasparente */
 #upgrade {
@@ -47,7 +45,28 @@ main {
 #contenuti {
   padding-top: 90px;
   background-color: #262a30;
-  height: 100%;
+}
+#contenuti nav ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+#contenuti nav ul li {
+  padding-right: 15px;
+  padding-bottom: 40px;
+}
+#contenuti nav ul li a {
+  color: #8a918c;
+  text-decoration: none;
+}
+#contenuti nav ul li hr {
+  color:#1df500;
+  width: 40px;
+  text-align: center;
+  margin-left: calc(50% - 20px)
 }
 /* footer */
 footer {
