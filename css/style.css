@@ -7,15 +7,25 @@
 /* main */
 /* menu */
 #menu-main {
-  width: 230px;
+  width: 210px;
   float: left;
   background-color: black;
   padding-bottom: 90px;
+}
+#menu-main .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+#menu-main .logo img{
+  width: 180px;
+  height: auto;
 
 }
 /* parte centrale di pagina  */
 #principale {
-  width: calc(100% - 230px);
+  width: calc(100% - 210px);
   float: right;
 }
 /* barra trasparente */
@@ -25,7 +35,7 @@
   position: fixed;
   top:0;
   right: 0;
-  width: calc(100% - 230px);
+  width: calc(100% - 210px);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -84,7 +94,17 @@
 }
 #contenuti section ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+#contenuti section ul li {
+  max-width: 150px;
+  min-width: 100px;
+  margin: 10px 15px 10px 0;
+}
+#contenuti section ul li img {
+  width: 100%;
+  height: auto;
 }
 /* footer */
 footer {
