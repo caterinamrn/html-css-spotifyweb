@@ -11,7 +11,13 @@
   float: left;
   background-color: black;
   padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 }
+/* prima parte */
 #menu-main .logo{
   display: flex;
   align-items: center;
@@ -21,7 +27,52 @@
 #menu-main .logo img{
   width: 180px;
   height: auto;
+}
+#menu-main nav ul li a{
+  display: flex;
+  align-items: center;
+  color: #b5b4b0;
+  text-decoration: none;
+}
+#menu-main nav >ul >li> a> img{
+ width: 40px;
+ margin-right: 10px;
+}
+#menu-main h3 {
+  color: #b5b4b0;
+}
 
+/* seconda aparte sezione sinistra */
+.piepagina {
+  width: 90%;
+  margin: 0 auto;
+}
+.piepagina a {
+  text-decoration: none;
+  color: #b5b4b0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.piepagina #installa {
+  border-bottom: solid 1px #9e9e9e;
+  padding-bottom: 10px;
+}
+.piepagina #installa img{
+  width: 15px;
+  margin-right: 10px;
+}
+.piepagina a:last-child img {
+  background-color:#9e9e9e;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.piepagina a:last-child span {
+  color:white;
+  font-weight: bold;
 }
 /* parte centrale di pagina  */
 #principale {
@@ -101,10 +152,14 @@
   max-width: 150px;
   min-width: 100px;
   margin: 10px 15px 10px 0;
+  text-align: center;
 }
 #contenuti section ul li img {
   width: 100%;
   height: auto;
+}
+#contenuti section:last-child li img {
+  border-radius: 50%;
 }
 /* footer */
 footer {
