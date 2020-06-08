@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify Web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -68,7 +69,7 @@
       <div id="principale">
         <!-- upgrade: parte fixed -->
         <div id="upgrade">
-          <span id="button"> <b>EFFETUA L'UPGRADE</b></span>
+          <a id="button"> <b>EFFETUA L'UPGRADE</b></a>
         </div>
         <!-- esposizione contenuti musicali -->
         <div id="contenuti">
@@ -157,7 +158,43 @@
     </main>
     <!-- footer -->
     <footer>
+      <div class="brano">
+        <img src="img/player_left.jpg" alt="player">
+        <div class="nome_brano">
+          <h6>Il top Hoods</h6>
+          <span>Clark Griswold</span>
+        </div>
 
+        <div class="icone">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+
+      </div>
+      <div class="riproduzione">
+        <div class="opzioni">
+          <a href="#"><i class="fas fa-random"></i></a>
+          <a href="#"><i class="fas fa-step-backward"></i></a>
+          <a href="#"><i class="far fa-play-circle"></i></a>
+          <a href="#"><i class="fas fa-step-forward"></i></a>
+          <a href="#"><i class="fas fa-redo-alt"></i></a>
+        </div>
+        <div class="barra">
+          <span>0:25</span>
+          <div class="barra_avanzamento">
+            <div class="riprodotto"></div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+      <div class="impostazioni">
+        <a href="#"> <i class="fas fa-bars"></i></a>
+        <a href="#"><i class="fas fa-desktop"></i></a>
+        <a href="#"><i class="fas fa-volume-up"></i></a>
+        <div class="barra_volume">
+          <div class="riprodotto"></div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

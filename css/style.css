@@ -15,7 +15,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  position: fixed;
+  height: 100%;
 }
 /* prima parte */
 #menu-main .logo{
@@ -40,12 +41,17 @@
 }
 #menu-main h3 {
   color: #b5b4b0;
+  padding: 10px 0;
 }
-
+#menu-main nav ul ul li {
+  padding-bottom:10px;
+  overflow-y: auto;
+}
 /* seconda aparte sezione sinistra */
 .piepagina {
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto 0;
+  z-index: 10;
 }
 .piepagina a {
   text-decoration: none;
@@ -120,6 +126,7 @@
 #contenuti nav ul li a {
   color: #8a918c;
   text-decoration: none;
+  font-size: 15px;
 }
 #contenuti nav ul li hr {
   color:#1df500;
@@ -170,4 +177,88 @@ footer {
   left:0;
   width: 100%;
   z-index: 900;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;s
+}
+footer .riproduzione i, footer .impostazioni i{
+  padding-right: 15px;
+}
+footer .riprodotto {
+  width: 20%;
+  height: 100%;
+  background-color: #dedede;
+  border-radius: 50px;
+}
+
+/* prima parte del footer */
+footer .brano {
+  display: flex;
+  align-items: center;
+}
+footer .brano img{
+  width: 50px;
+  margin-right: 10px;
+}
+footer .brano h6 {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+footer .brano span {
+  font-size: 12px;
+  color: #828282;
+  font-weight: bold;
+  padding-right: 10px;
+}
+footer .brano i{
+  color: #828282;
+  padding-right: 10px;
+}
+/* seconda parte del footer */
+footer .riproduzione {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .riproduzione a {
+  color: white;
+}
+.riproduzione .opzioni, .riproduzione .barra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .barra {
+  padding-top: 10px;
+}
+footer .opzioni .far.fa-play-circle {
+  font-size: 25px;
+  padding: 0 20px 0 10px;
+}
+footer .barra .barra_avanzamento {
+  width: 400px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #828282;
+}
+footer .barra span {
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 10px;
+}
+/* terza parte del footer */
+footer .impostazioni {
+  display: flex;
+  align-items: center;
+}
+footer .impostazioni a {
+  color: #dedede;
+}
+footer .impostazioni .barra_volume {
+  width: 100px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #828282;
 }
