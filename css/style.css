@@ -45,6 +45,9 @@
 }
 #menu-main nav ul ul li {
   padding-bottom:10px;
+}
+#menu-main nav ul ul {
+  resize: vertical;
   overflow-y: auto;
 }
 /* seconda aparte sezione sinistra */
@@ -52,6 +55,7 @@
   width: 90%;
   margin: 10px auto 0;
   z-index: 10;
+  position: sticky;
 }
 .piepagina a {
   text-decoration: none;
@@ -84,6 +88,7 @@
 #principale {
   width: calc(100% - 210px);
   float: right;
+  overflow-y: auto;
 }
 /* barra trasparente */
 #upgrade {
@@ -179,7 +184,8 @@ footer {
   z-index: 900;
   padding: 0 10px;
   display: flex;
-  justify-content: space-between;s
+  justify-content: space-between;
+  position: sticky;
 }
 footer .riproduzione i, footer .impostazioni i{
   padding-right: 15px;
@@ -204,6 +210,7 @@ footer .brano h6 {
   color: white;
   font-weight: bold;
   font-size: 14px;
+
 }
 footer .brano span {
   font-size: 12px;
