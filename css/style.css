@@ -18,6 +18,9 @@
   position: fixed;
   height: 100%;
 }
+#menu-main a:hover {
+  color:white;
+}
 /* prima parte */
 #menu-main .logo{
   display: flex;
@@ -29,6 +32,9 @@
   width: 180px;
   height: auto;
 }
+#menu-main .xs {
+  display: none;
+}
 #menu-main nav ul li a{
   display: flex;
   align-items: center;
@@ -39,15 +45,23 @@
  width: 40px;
  margin-right: 10px;
 }
+#menu-main nav ul li a i {
+  padding-bottom:10px;
+  padding-right: 10px;
+  font-size: 40px;
+}
+#menu-main #playlist {
+  padding-bottom: 10px;
+}
 #menu-main h3 {
-  color: #b5b4b0;
+  color: white;
   padding: 10px 0;
 }
 #menu-main nav ul ul li {
   padding-bottom:10px;
 }
 #menu-main nav ul ul {
-  resize: vertical;
+  max-height: 100%;
   overflow-y: auto;
 }
 /* seconda aparte sezione sinistra */
@@ -110,6 +124,10 @@
   padding: 15px 25px;
   font-size: 13px;
 }
+#upgrade #button:hover {
+  font-size: 15px;
+  cursor: pointer;
+}
 /* parte contenuti */
 #contenuti {
   padding-top: 90px;
@@ -138,6 +156,9 @@
   width: 40px;
   text-align: center;
   margin-left: calc(50% - 20px)
+}
+#contenuti nav ul li a:hover {
+  color: white;
 }
 /* sezini interne della parte contenuti */
 #contenuti section {
@@ -170,6 +191,10 @@
   width: 100%;
   height: auto;
 }
+#contenuti section ul li .over:hover{
+  background-color: rgba(255, 255, 255 0.5);
+  z-index: 2;
+}
 #contenuti section:last-child li img {
   border-radius: 50%;
 }
@@ -185,7 +210,6 @@ footer {
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
 }
 footer .riproduzione i, footer .impostazioni i{
   padding-right: 15px;
@@ -222,6 +246,14 @@ footer .brano i{
   color: #828282;
   padding-right: 10px;
 }
+footer .icone i:hover {
+  color: white;
+  cursor: pointer;
+}
+.brano span:hover {
+  text-decoration: underline;
+  color: white;
+}
 /* seconda parte del footer */
 footer .riproduzione {
   display: flex;
@@ -242,6 +274,9 @@ footer .barra {
 footer .opzioni .far.fa-play-circle {
   font-size: 25px;
   padding: 0 20px 0 10px;
+}
+footer .opzioni .far.fa-play-circle:hover {
+  font-size: 30px;
 }
 footer .barra .barra_avanzamento {
   width: 400px;
