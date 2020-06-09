@@ -309,7 +309,8 @@ footer .opzioni .far.fa-play-circle:hover {
   font-size: 30px;
 }
 footer .barra .barra_avanzamento {
-  width: 400px;
+  width: 30%;
+  min-width: 200px;
   height: 3px;
   border-radius: 50px;
   background-color: #828282;
