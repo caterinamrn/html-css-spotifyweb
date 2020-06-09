@@ -116,6 +116,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 10px;
+  z-index: 100;
 }
 #upgrade #button {
   border: white 1px solid;
@@ -160,7 +161,7 @@
 #contenuti nav ul li a:hover {
   color: white;
 }
-/* sezini interne della parte contenuti */
+/* sezioni interne della parte contenuti */
 #contenuti section {
   width: 95%;
   margin: 0 auto 30px;
@@ -172,6 +173,7 @@
 #contenuti h4 {
   color:white;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 #contenuti section span,#contenuti section p {
     color: #8a918c;
@@ -191,9 +193,29 @@
   width: 100%;
   height: auto;
 }
-#contenuti section ul li .over:hover{
-  background-color: rgba(255, 255, 255 0.5);
-  z-index: 2;
+#contenuti section ul li .over {
+  position: relative;
+  z-index: 1;
+}
+#contenuti section ul li .over div{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#contenuti section ul li .over:hover div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#contenuti section:last-child li .over div {
+  border-radius: 50%;
 }
 #contenuti section:last-child li img {
   border-radius: 50%;
@@ -219,6 +241,11 @@ footer .riprodotto {
   height: 100%;
   background-color: #dedede;
   border-radius: 50px;
+}
+footer .barra_volume i, footer .barra_avanzamento i {
+    display: none;
+    color: white;
+    font-size: 10px;
 }
 
 /* prima parte del footer */
@@ -283,12 +310,23 @@ footer .barra .barra_avanzamento {
   height: 3px;
   border-radius: 50px;
   background-color: #828282;
+  display:flex;
+  align-items: center;
 }
 footer .barra span {
   color: white;
   font-weight: bold;
   padding: 0 10px;
   font-size: 10px;
+}
+footer .barra .barra_avanzamento:hover {
+  cursor: pointer;
+}
+footer .barra .barra_avanzamento:hover .riprodotto{
+  background-color: #1df500;
+}
+footer .barra .barra_avanzamento:hover i {
+  display: inline;
 }
 /* terza parte del footer */
 footer .impostazioni {
@@ -303,4 +341,15 @@ footer .impostazioni .barra_volume {
   height: 3px;
   border-radius: 50px;
   background-color: #828282;
+  display: flex;
+  align-items: center;
+}
+footer .impostazioni .barra_volume:hover {
+  cursor: pointer;
+}
+footer .impostazioni .barra_volume:hover .riprodotto{
+  background-color: #1df500;
+}
+footer .impostazioni .barra_volume:hover i {
+  display: inline;
 }
