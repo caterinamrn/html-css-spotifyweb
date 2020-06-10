@@ -7,6 +7,9 @@
 }
 /* main */
 /* menu */
+#contenitore_laterale {
+  position: relative;
+}
 #menu-main {
   width: 210px;
   float: left;
@@ -47,7 +50,7 @@
  margin-right: 10px;
 }
 #menu-main nav >ul >li:first-child {
-  border-left:#1df500 2px solid;  
+  border-left:#1df500 2px solid;
 }
 #menu-main nav ul li a i {
   padding-bottom:10px;
@@ -74,7 +77,11 @@
   width: 90%;
   margin: 10px auto 0;
   z-index: 10;
-  position: sticky;
+  position: absolute;
+  bottom: 80px;
+  left:10px;
+  padding-top: 10px;
+  background-color: black;
 }
 .piepagina a {
   text-decoration: none;
