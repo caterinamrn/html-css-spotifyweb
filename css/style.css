@@ -33,7 +33,7 @@
   width: 180px;
   height: auto;
 }
-#menu-main .xs {
+#menu-main .xs.logo {
   display: none;
 }
 #menu-main nav ul li a{
@@ -45,6 +45,9 @@
 #menu-main nav >ul >li> a> img{
  width: 40px;
  margin-right: 10px;
+}
+#menu-main nav >ul >li:first-child {
+  border-left:#1df500 2px solid;  
 }
 #menu-main nav ul li a i {
   padding-bottom:10px;
