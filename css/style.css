@@ -68,10 +68,12 @@
   padding-bottom:10px;
 }
 #menu-main nav ul ul {
-  max-height: 100%;
+  height: 100px;
   overflow-y: auto;
 }
-
+#menu-main nav ul ul li  a{
+  font-size: 10px;
+}
 /* seconda aparte sezione sinistra */
 .piepagina {
   width: 90%;
@@ -384,6 +386,7 @@ footer .impostazioni .barra_volume:hover i {
   }
   #menu-main .xs.logo {
     display: flex;
+    width: 40px;
   }
   #menu-main .xs {
     display: block;
@@ -400,5 +403,9 @@ footer .impostazioni .barra_volume:hover i {
   }
   #menu-main .piepagina a {
     margin-bottom: 5px;
+  }
+  #menu-main .piepagina {
+    left:0;
+    bottom: 90px;
   }
 }
