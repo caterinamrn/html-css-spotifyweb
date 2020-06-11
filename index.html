@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
     <!-- main -->
     <main>
       <!-- barra di menu sinistra -->
@@ -60,7 +60,7 @@
             </a>
             <a href="#">
               <img src="img/profile.svg" alt="profilo">
-              <span class="larga"> John Doe</span>
+              <span id="nomeutente" class="larga"></span>
             </a>
 
           </div>
@@ -252,5 +252,8 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+    document.getElementById('nomeutente').innerHTML='Nome Utente';
+    </script>
   </body>
 </html>

@@ -44,9 +44,10 @@
   align-items: center;
   color: #b5b4b0;
   text-decoration: none;
+  font-size: 15px;
 }
 #menu-main nav >ul >li> a> img{
- width: 40px;
+ width: 30px;
  margin-right: 10px;
 }
 #menu-main nav >ul >li:first-child {
@@ -55,7 +56,7 @@
 #menu-main nav ul li a i {
   padding-bottom:10px;
   padding-right: 10px;
-  font-size: 40px;
+  font-size: 30px;
 }
 #menu-main #playlist {
   padding-bottom: 10px;
@@ -63,6 +64,7 @@
 #menu-main h3 {
   color: white;
   padding: 10px 0;
+  font-size: 15px;
 }
 #menu-main nav ul ul li {
   padding-bottom:10px;
@@ -321,8 +323,7 @@ footer .opzioni .far.fa-play-circle:hover {
   font-size: 30px;
 }
 footer .barra .barra_avanzamento {
-  width: 30%;
-  min-width: 200px;
+  width: 30vw;
   height: 3px;
   border-radius: 50px;
   background-color: #828282;
@@ -407,5 +408,10 @@ footer .impostazioni .barra_volume:hover i {
   #menu-main .piepagina {
     left:0;
     bottom: 90px;
+  }
+}
+@media all and (max-width:635px) {
+  footer .impostazioni .barra_volume {
+    display: none;
   }
 }
