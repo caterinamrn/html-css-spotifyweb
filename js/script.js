@@ -1,1 +1,3 @@
-document.getElementById('nomeutente').innerHTML='Nome Utente';
+// scrivo nome utente usando javascript
+document.getElementById('nomeutente')
+.innerHTML='Nome Utente';

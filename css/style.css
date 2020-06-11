@@ -69,8 +69,11 @@
 #menu-main nav ul ul li {
   padding-bottom:10px;
 }
+#menu-main .larga.playlist {
+  overflow: hidden;
+}
 #menu-main nav ul ul {
-  height: 100px;
+  height: 80%;
   overflow-y: auto;
 }
 #menu-main nav ul ul li  a{
@@ -118,7 +121,8 @@
 /* parte centrale di pagina  */
 #principale {
   width: calc(100% - 210px);
-  float: right;
+  float: left;
+  margin-left: 210px;
   overflow-y: auto;
 }
 /* barra trasparente */
